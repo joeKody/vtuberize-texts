@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Yuruka;
+    src: url("./YurukaStd-UB.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #343434;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #eee;
+}
+
+.grow{
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+svg {
+    position: relative;
+}
