@@ -56,14 +56,17 @@ function generateSVG(vtubeText: string, colorFill: string, colorStroke: string, 
       })
     }
   }).attr({
-    'font-family': 'YurukaSTD',
+    'font-family': 'YurukaSTD,JKBaitoey,sans-serif',
     'font-size': '7rem',
     'fill': colorStroke,
     'stroke': colorStroke,
     'stroke-width': '5rem',
+    'stroke-linejoin': 'round',
+    'stroke-linecap': 'round',
     'paint-order': 'stroke',
   }).move(0, 0).center(vtubeContainer.clientWidth / 2, vtubeContainer.clientHeight / 2);
 
+  let outline2 = outline.clone().fill(colorFill).stroke(colorFill).scale(0.8);
   let shadow = outline.clone().fill(colorShadow).stroke(colorShadow).dx(10).dy(10);
   let text = outline.clone().fill(colorFill)
     .attr({
