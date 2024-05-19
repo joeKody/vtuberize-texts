@@ -85,7 +85,7 @@ let vtubeColorShadow = document.getElementById('vtube-color-shadow') as HTMLInpu
 vtubeText.value = 'FL Chan';
 vtubeColorFill.value =   '#000000';
 vtubeColorStroke.value = '#ffffff';
-vtubeColorShadow.value = '#000000';
+vtubeColorShadow.value = '#1f1f1f';
 
 let vtubeContainer = document.getElementById('vtube-container') as HTMLDivElement;
 generateSVG(vtubeText.value, vtubeColorFill.value, vtubeColorStroke.value, vtubeColorShadow.value, vtubeContainer);
