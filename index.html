@@ -1,14 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VTexts</title>
-    <script defer src="./script.js"></script>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VTuberize</title>
 </head>
 <body>
-    <h1>this shit aint got style i know</h1>
-    <h2>also no responsive, i dont care</h2>
+
+
+  <div class="description-container">
+    <img src="/Waving.gif" alt="" height="150px">
+    <div class="description">
+      <h1>VTuberize Texts</h1>
+      <p>This is a cry for help.</p>
+    </div>
+    <img src="/Zitabata.gif" alt="" height="150px">
+  </div>
+  <div id="input-container">
+    <input type="color" id="vtube-color-stroke">
+    <input type="color" id="vtube-color-fill">
+    <input type="color" id="vtube-color-shadow">
+    <input type="text" id="vtube-text">
+    <button id="download-button" disabled>Download as SVG</button>
+  </div>
+
+  <div id="vtube-container">
+
+  </div>
+
+  <script src="./src/svg.min.js"></script>
+  <script type="module" src="./src/main.ts"></script>
 </body>
 </html>
