@@ -66,7 +66,7 @@ function generateSVG(vtubeText: string, colorFill: string, colorStroke: string, 
     'paint-order': 'stroke',
   }).move(0, 0).center(vtubeContainer.clientWidth / 2, vtubeContainer.clientHeight / 2);
 
-  let outline2 = outline.clone().fill(colorFill).stroke(colorFill).scale(0.8);
+  //let outline2 = outline.clone().fill(colorFill).stroke(colorFill).scale(0.8);
   let shadow = outline.clone().fill(colorShadow).stroke(colorShadow).dx(10).dy(10);
   let text = outline.clone().fill(colorFill)
     .attr({
